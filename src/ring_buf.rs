@@ -14,7 +14,7 @@ impl<T, const N: usize> RingBuf<T, N> {
         Self {
             head: 0,
             tail: 0,
-            data: unsafe { crate::alloc_array::<T, N>() }
+            data: unsafe { crate::alloc::alloc_array::<T, N>() }
         }
     }
 

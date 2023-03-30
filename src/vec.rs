@@ -10,7 +10,7 @@ impl<T, const N: usize> Vec<T, N> {
     pub const fn new() -> Self {
         Self {
             len: 0,
-            mem: unsafe { crate::alloc_array::<T, N>() }
+            mem: unsafe { crate::alloc::alloc_array::<T, N>() }
         }
     }
 
