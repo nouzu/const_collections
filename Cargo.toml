@@ -1,7 +1,13 @@
 [package]
 name = "const_collections"
+authors = ["Dmytro Prokhorov"]
 version = "0.1.0"
 edition = "2021"
+description = "const-allocatable collections"
+repository = "https://github.com/nouzu/const_collections"
+license = "WTFPL"
+keywords = ["vec", "queue", "const", "static"]
+categories = ["data-structures", "no-std"]
 
 [profile.release]
 lto = true
