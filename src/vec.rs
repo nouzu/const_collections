@@ -15,6 +15,16 @@ impl<T, const N: usize> Vec<T, N> {
     }
 
     #[inline(always)]
+    pub const fn is_empty(&self) -> bool {
+        self.len() == 0
+    }
+
+    #[inline(always)]
+    pub const fn len(&self) -> usize {
+        self.len
+    }
+
+    #[inline(always)]
     pub const unsafe fn set_len(&mut self, len: usize) {
         self.len = len;
     }
